@@ -181,3 +181,20 @@ h2 {
     font-weight: bold;
     animation: colorChange 3s infinite alternate;
 }
+
+.content-section {
+    display: none;
+}
+
+/* Show only the active section */
+.content-section.active {
+    display: block;
+}
+
+.content-section p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+    justify-content: center;
+}
