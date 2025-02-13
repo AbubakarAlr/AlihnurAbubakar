@@ -31,3 +31,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Handle section navigation
+    const navLinks = document.querySelectorAll("nav ul li a");
+    const sections = document.querySelectorAll(".content-section");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            const sectionId = this.getAttribute("data-section");
+
+            // Hide all sections
+            sections.forEach(section => {
+                section.classList.remove("active");
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add("active");
+        });
+    });
+});
