@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+/* Animated Name in Header */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    animation: colorChange 3s infinite alternate;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+/* Profile Image */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid blue;
+}
+
+/* Animated Name in Hero Section */
+.highlight {
+    font-weight: bold;
+    display: inline-block;
+    animation: colorChange 3s infinite alternate;
+}
+
+/* Keyframes for Color Changing Animation */
+@keyframes colorChange {
+    0% {
+        color: blue;
+        text-shadow: 0 0 5px blue;
+    }
+    25% {
+        color: cyan;
+        text-shadow: 0 0 10px cyan;
+    }
+    50% {
+        color: purple;
+        text-shadow: 0 0 15px purple;
+    }
+    75% {
+        color: pink;
+        text-shadow: 0 0 10px pink;
+    }
+    100% {
+        color: red;
+        text-shadow: 0 0 5px red;
+    }
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Underline Effect for Navigation Links */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Freelancer Text */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Description */
+.description {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-icons a img {
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Hire Me Button */
+.hire-btn {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.hire-btn:hover {
+    background-color: darkblue;
+}
+
+@keyframes colorChange {
+    0% { color: #ff5733; }   /* Red */
+    25% { color: #33ff57; }  /* Green */
+    50% { color: #3357ff; }  /* Blue */
+    75% { color: #ff33f6; }  /* Pink */
+    100% { color: #ff5733; } /* Back to Red */
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    animation: colorChange 3s infinite alternate;
+}
